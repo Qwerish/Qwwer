@@ -1,0 +1,319 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+
+Фон - 212529
+Кнопки - ffc107
+
+*/
+
+body {
+    margin: 0 0 0 10%;
+    max-width: 1200px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #0cb5f8;
+    background-color: #212529;
+}
+
+.back:hover{
+    font-size: 18px;
+    color: #ffc107;
+}
+
+a {
+    text-decoration: none;
+    color: #0cb5f8;
+}
+
+.rwerw {
+    display: flex;
+    justify-content: center;
+}
+
+.cent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-header {
+    margin-top: 2.55%;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #0cb5f8;
+}
+
+button:hover {
+    color: #0cb5f8;
+}
+
+.cont-two{
+    margin: 10% 0 0 20%;
+}
+
+.container {
+    max-width: 1600px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    padding: 40px 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+/* header */
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header-logo {
+    color: #0cb5f8;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header-wrapper button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.header-wrapper button:hover {
+    color: #0cb5f8;
+}
+
+
+/* homepage */
+
+input,
+textarea,
+select {
+    border-radius: 4px;
+    padding: 12px;
+    width: 250px;
+}
+
+.search-form {
+    margin: 30px 0;
+}
+
+.search-form input {
+    width: 250px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.qwerrrr {
+    display: flex;
+    justify-content: center;
+}
+
+.products-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 20px;
+}
+
+.products-item {
+    padding: 5%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.products-item {
+    width: 100%;
+}
+
+.products-image .image {
+    width: 500px;
+    height: 400px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.price {
+    color: #0cb5f8;
+    font-weight: 600;
+}
+
+.btn {
+    color: #0cb5f8;
+}
+
+.btn:hover {
+    color: #ffc107;
+    font-size: 16px;
+}
+
+
+/* singlepage */
+
+.product-item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.product-images {
+    min-width: 500px;
+    border-radius: 20px;
+}
+
+.product-image {
+    width: 100%;
+    height: 500px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.product-info .name {
+    font-weight: 600;
+    color: #0cb5f8;
+    font-size: 20px;
+}
+
+
+/* modal */
+
+.overlay {
+    display: none;
+}
+
+.overlay.active {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    background-color: #212529;
+    border: 2px solid #ffc107;
+    padding: 30px;
+    border-radius: 8px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    color: #0cb5f8;
+}
+
+.modal-content .title {
+    color: #0cb5f8;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 300px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #242B33;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+}
+
+form button:hover {
+    color: #0cb5f8;
+}
+
+.search-form {
+    width: 100%;
+}
